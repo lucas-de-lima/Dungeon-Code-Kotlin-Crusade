@@ -1,18 +1,20 @@
 package org.dungeonCodeKotlinCrusade.races
 
 abstract class Race(private val name: String, private val dexterity: Int) {
-    abstract val maxLifePoints: Int
+
+    fun getName(): String {
+        return name
+    }
+
+    fun getDexterity(): Int {
+        return dexterity
+    }
+
+    abstract fun getMaxLifePoints(): Int
 
     companion object {
-        private var instances: Int = 0
-
-        fun createdRacesInstances(): Int {
-            if (instances == 0) {
-                instances = 1
-            } else {
-                instances++
-            }
-            return instances
+        fun createRacesInstances(): Int {
+            throw NotImplementedError("Not implemented")
         }
     }
 }
