@@ -1,6 +1,6 @@
 package org.dungeonCodeKotlinCrusade.types
 
 sealed class EnergyType {
-    object Mana : EnergyType()
-    object Stamina : EnergyType()
+    data object Mana : EnergyType()
+    data object Stamina : EnergyType()
 }
