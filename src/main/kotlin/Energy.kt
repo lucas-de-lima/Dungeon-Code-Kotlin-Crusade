@@ -4,5 +4,5 @@ import org.dungeonCodeKotlinCrusade.types.EnergyType
 
 data class Energy (
     val type: EnergyType,
-    val amount: Int
+    var amount: Int
 )
